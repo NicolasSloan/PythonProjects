@@ -57,5 +57,5 @@ def first_run(self):
         cur = conn.cursor()
         cur,count = count_records(cur)
         if count < 1:
-            cur.execute("""INSERT INTO tbl_phonebook (col_fname,col_lname,col_fullname,col_phone,col_email) VALUES (?,?,?,?,?)""", (data
+            cur.execute("""INSERT INTO tbl_phonebook (col_fname,col_lname,col_fullname,col_phone,col_email) VALUES (?,?,?,?,?)"""), (data)
              
